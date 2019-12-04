@@ -1,44 +1,28 @@
-JAVASCRIPT:
 
-var title = document.getElementById("title");
+function house3(){
 
-var shovel = false
-var gastank = false
-
-function startGame(){
-	title.innerHTML = "Lost in Cabin";
-	inventoryItem.style.display ="none"
-	button2.style.display = "none"
-	button1.innerHTML = "Start Game"
-	button1.setAttribute = ("onclick", "level1()");
-
-function level1();
- description.innerHTML = "uitleg level";
- image.src= "img-blabla.jpg";
- button1.innerHTML = "GA daar eh sah";
- button1.setAttribute("onclick", level1(););
- button2.style.display = "inline-block";
- button2.innerHTML = "naar het bos";
- button2.setAttribute("onclik", "insideCabin();");
+if(fuel == false){
+	image.src (met fuel)
+	button1 pak schep button
+	buton setattribute onclick getFuel
+	inventory.style.dispaly none
+} else {
+	image.src (zonder fuel)
+	button1 none
+	inventoryitem.style.display = inline-block
+	inventory.src = image
+	inventory.style.width = 100px
+} 
+button2
+button3
 }
 
-function insideCabin();
-if(shovel == true){
-	image.src= "img-sfafa.jpg";
+function getFuel(){
+	fuel = true;
+	house3();
+	
 
-}else{
-	image.scr= img-fsafsa.jpg;
-}
-image.src ="img-gasga.jpg";
-description.innerHTML = "wat wil je doen?";
-
-function getsleutel(){
-	if(shovel == true){
-	insideCabin();
-
-}else {
-	alert("je hebt geen schep!");
 }
 
 
-startGame();
+
