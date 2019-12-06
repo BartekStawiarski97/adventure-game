@@ -10,6 +10,8 @@ var inventoryItem2 = document.getElementById("inventoryItem2");
 var fuelCanister = false;
 var shovel = false;
 
+//Begin van mijn game.
+
 function startGame(){
 	title.innerHTML = "Escape from the Murderer";
 	inventoryItem.style.display ="none"
@@ -30,6 +32,8 @@ function credits(){
 function tutorial(){
 	image.src ="tutorial.jpg";
 }
+
+//Eerste level
 
 function beginning(){
 	image.src ="beginning.jpg";
@@ -52,6 +56,8 @@ function house(){
     button3.style.display = "none";
 }
 
+//GAME OVER
+
 function house1(){
 	image.src ="dead3.jpg";
 	description.innerHTML = "THE MURDERER FOUND YOU...YOU ARE DEAD!";
@@ -59,7 +65,6 @@ function house1(){
 	button1.setAttribute("onclick", "window.location.reload()");
     button2.style.display = "none";
     button3.style.display = "none";
-
 }
 
 function path(){
@@ -86,6 +91,8 @@ function camping(){
     button3.setAttribute("onclick", "path()");
 }
 
+//GAME OVER 
+
 function dead1(){
 	image.src ="dead2.jpg"
 	description.innerHTML ="THAT WAS NOT THE BEST IDEA..HE FOUND YOU AND YES... YOU ARE DEAD!";
@@ -93,7 +100,6 @@ function dead1(){
 	button1.setAttribute("onclick", "window.location.reload()");
 	button2.style.display = "none";
 	button3.style.display = "none";
-	
 }
 
 function house3(){
@@ -110,8 +116,8 @@ function house3(){
 function exploring(){
 	if(fuelCanister == false){
 	  image.src ="fuelhouse.jpg"
-	  description.innerHTML ="[IN THE HOUSE]Look around, maybe you will find something usefull..."
-	  button1.innerHTML = "LOOK AROUND";
+	  description.innerHTML ="[IN THE HOUSE]Dead body..it doesn't bode well"
+	  button1.innerHTML = "SEARCH FOR SOMETHING USEFULL";
 	  button1.setAttribute("onclick", "getFuel()");
 	  button1.style.display ="inline-block";
   } else {
@@ -169,6 +175,8 @@ function graveyard(){
 	graveyard();
 }
 
+//Level met een optie om een item te gebruiken.
+
 function hello(){
 	image.src ="hellothere.jpg"
 	description.innerHTML ="HE FOUND YOU! WHAT NOW???"
@@ -199,6 +207,8 @@ function useShovel(){
       
  }
 
+//GAME OVER
+
 function killed(){
 	image.src ="killed.jpg"
 	description.innerHTML ="HE CATCHED YOU..I AM SORRY BUT.. YOU'RE DEAD!"
@@ -206,7 +216,6 @@ function killed(){
 	button1.setAttribute("onclick", "window.location.reload()");
 	button2.style.display = "none";
 	button3.style.display = "none";
-	
 }
 
 function car(){
@@ -219,6 +228,8 @@ function car(){
     button2.setAttribute("onclick", "forest2()");
     button3.style.display = "none";
 }
+
+//Level met een optie om een item te gebruiken.
 
 function car2(){
 	if(fuelCanister == false){
